@@ -3,7 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutchanon Kongkaew | Web Creator & Developer</title>
+    <title>Nutchanon Kongkaew | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Nutchanon Kongkaew — a Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.">
+    <meta name="author" content="Nutchanon Kongkaew">
+    <meta name="keywords" content="Nutchanon Kongkaew, Web Developer, Fullstack Developer, Frontend, Backend, Web Creator, Portfolio, Thailand, React, JavaScript">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nutchanon Kongkaew | Web Creator & Developer">
+    <meta property="og:description" content="Portfolio of Nutchanon Kongkaew — a Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:site_name" content="Nutchanon Kongkaew Portfolio">
+    <meta property="og:image" content="/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Nutchanon Kongkaew — Web Creator & Developer">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nutchanon Kongkaew | Web Creator & Developer">
+    <meta name="twitter:description" content="Portfolio of Nutchanon Kongkaew — a Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.">
+    <meta name="twitter:image" content="/og-image.jpg">
+    <meta name="twitter:image:alt" content="Nutchanon Kongkaew — Web Creator & Developer">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nutchanon Kongkaew",
+      "jobTitle": "Web Creator & Developer",
+      "description": "Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.",
+      "url": "/",
+      "image": "/og-image.jpg",
+      "knowsAbout": [
+        "Web Development",
+        "Frontend Development",
+        "Backend Development",
+        "Fullstack Development",
+        "JavaScript",
+        "React"
+      ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -34,6 +76,11 @@ https://www.tooplate.com/view/2139-neural-portfolio
             --bg-glass: rgba(255, 255, 255, 0.05);
             --text-primary: #ffffff;
             --text-secondary: #b0b0b0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
         }
 
         body {
@@ -90,13 +137,14 @@ https://www.tooplate.com/view/2139-neural-portfolio
             backdrop-filter: blur(10px);
             z-index: 1000;
             transition: all 0.3s ease;
-            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+            border-bottom: 1px solid transparent;
+            border-image: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent)) 1;
         }
 
         nav.scrolled {
             padding: 10px 50px;
             background: rgba(10, 10, 10, 0.98);
-            box-shadow: 0 5px 20px rgba(0, 255, 255, 0.1);
+            box-shadow: 0 5px 20px rgba(0, 255, 255, 0.12), 0 5px 30px rgba(255, 0, 255, 0.08);
         }
 
         .nav-container {
@@ -111,7 +159,7 @@ https://www.tooplate.com/view/2139-neural-portfolio
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 16px;
             text-decoration: none;
             transition: all 0.3s ease;
         }
@@ -121,21 +169,29 @@ https://www.tooplate.com/view/2139-neural-portfolio
         }
 
         .logo-svg {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             position: relative;
+            display: block;
+            filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.35)) drop-shadow(0 0 6px rgba(255, 0, 255, 0.25));
+            transition: filter 0.3s ease;
+        }
+
+        .logo-container:hover .logo-svg {
+            filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.6)) drop-shadow(0 0 10px rgba(255, 0, 255, 0.5)) drop-shadow(0 0 14px rgba(255, 255, 0, 0.35));
         }
 
         .logo-text {
             font-family: 'Audiowide', sans-serif;
             font-size: 1.5rem;
             font-weight: 400;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             letter-spacing: 3px;
             text-transform: uppercase;
+            line-height: 1;
         }
 
         /* Menu decorative lines */
@@ -149,7 +205,7 @@ https://www.tooplate.com/view/2139-neural-portfolio
             position: absolute;
             height: 1px;
             width: 50px;
-            background: linear-gradient(90deg, transparent, var(--primary));
+            background: linear-gradient(90deg, transparent, var(--accent), var(--secondary), var(--primary));
             top: 50%;
             transform: translateY(-50%);
         }
@@ -160,7 +216,7 @@ https://www.tooplate.com/view/2139-neural-portfolio
 
         .nav-menu::after {
             right: -60px;
-            background: linear-gradient(90deg, var(--primary), transparent);
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), transparent);
         }
 
         nav ul {
@@ -189,12 +245,35 @@ https://www.tooplate.com/view/2139-neural-portfolio
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
             transition: width 0.3s ease;
         }
 
-        nav ul a:hover::after {
+        nav ul a:hover::after,
+        nav ul a.active::after {
             width: 100%;
+        }
+
+        nav ul a:hover,
+        nav ul a.active {
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        nav a:focus { outline: none; }
+
+        nav ul a:focus-visible {
+            outline: 2px solid var(--secondary);
+            outline-offset: 4px;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-toggle:focus-visible {
+            outline: 2px solid var(--secondary);
+            outline-offset: 4px;
+            border-radius: 2px;
         }
 
         /* Mobile Menu */
@@ -208,11 +287,14 @@ https://www.tooplate.com/view/2139-neural-portfolio
         .mobile-menu-toggle span {
             width: 30px;
             height: 3px;
-            background: var(--primary);
             margin: 3px 0;
             transition: all 0.3s ease;
             border-radius: 2px;
         }
+
+        .mobile-menu-toggle span:nth-child(1) { background: var(--primary); }
+        .mobile-menu-toggle span:nth-child(2) { background: var(--secondary); }
+        .mobile-menu-toggle span:nth-child(3) { background: var(--accent); }
 
         .mobile-menu-toggle.active span:nth-child(1) {
             transform: rotate(45deg) translate(8px, 8px);
@@ -565,6 +647,9 @@ https://www.tooplate.com/view/2139-neural-portfolio
             position: relative;
             overflow: hidden;
             cursor: pointer;
+            display: block;
+            text-decoration: none;
+            color: inherit;
         }
 
         .project-card h3 {
@@ -855,9 +940,13 @@ https://www.tooplate.com/view/2139-neural-portfolio
                 font-size: 1.2rem;
             }
 
+            .logo-container {
+                gap: 12px;
+            }
+
             .logo-svg {
-                width: 40px;
-                height: 40px;
+                width: 32px;
+                height: 32px;
             }
 
             .nav-container {
@@ -882,8 +971,9 @@ https://www.tooplate.com/view/2139-neural-portfolio
 
             .nav-menu.active {
                 max-height: 400px;
-                border-top: 1px solid rgba(0, 255, 255, 0.2);
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+                border-top: 1px solid transparent;
+                border-image: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent)) 1;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 4px 20px rgba(255, 0, 255, 0.15);
             }
 
             .nav-menu::before,
@@ -1055,25 +1145,28 @@ Free HTML CSS Template
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo-container">
-                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Neural Network Logo -->
-                    <circle cx="50" cy="20" r="8" fill="none" stroke="#00ffff" stroke-width="2"/>
-                    <circle cx="25" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
-                    <circle cx="75" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
-                    <circle cx="50" cy="80" r="8" fill="none" stroke="#ffff00" stroke-width="2"/>
-                    
-                    <!-- Connections -->
-                    <line x1="50" y1="28" x2="25" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
-                    <line x1="50" y1="28" x2="75" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
-                    <line x1="25" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
-                    <line x1="75" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
-                    
-                    <!-- Center node -->
-                    <circle cx="50" cy="50" r="5" fill="#00ffff"/>
-                    <line x1="50" y1="28" x2="50" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
-                    <line x1="50" y1="55" x2="50" y2="72" stroke="#ffff00" stroke-width="1" opacity="0.6"/>
-                    <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
-                    <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="#00FFFF" d="M24,4C12.9,4,4,12.9,4,24s8.9,20,20,20s20-8.9,20-20S35.1,4,24,4z"/>
+                    <g>
+                        <path fill="#00FFFF" d="M9.9,9.9c-1.2,1.2-2.2,2.5-3,3.9L24,24L13.7,6.9C12.3,7.7,11,8.7,9.9,9.9z"/>
+                        <path fill="#00FFFF" d="M24,24l10.3,17.1c1.4-0.8,2.7-1.8,3.9-3s2.2-2.5,3-3.9L24,24z"/>
+                    </g>
+                    <path fill="#FF00FF" d="M24,40c-8.8,0-16-7.2-16-16S15.2,8,24,8s16,7.2,16,16S32.8,40,24,40z"/>
+                    <g>
+                        <path fill="#FF00FF" d="M24,24l-8.2-13.7c-1.1,0.7-2.1,1.4-3.1,2.4s-1.7,2-2.4,3.1L24,24z"/>
+                        <path fill="#FF00FF" d="M35.3,35.3c0.9-0.9,1.7-2,2.4-3.1L24,24l8.2,13.7C33.3,37,34.4,36.3,35.3,35.3z"/>
+                    </g>
+                    <path fill="#FF00FF" d="M24,12c-6.7,0-12,5.3-12,12s5.3,12,12,12s12-5.3,12-12S30.7,12,24,12z"/>
+                    <g>
+                        <path fill="#FF00FF" d="M32.5,32.5c0.7-0.7,1.3-1.5,1.8-2.3L24,24l6.2,10.3C31,33.8,31.8,33.2,32.5,32.5z"/>
+                        <path fill="#FF00FF" d="M24,24l-6.2-10.3c-0.8,0.5-1.6,1.1-2.3,1.8s-1.3,1.5-1.8,2.3L24,24z"/>
+                    </g>
+                    <path fill="#FFFF00" d="M24,32c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S28.4,32,24,32z"/>
+                    <g>
+                        <path fill="#FFFF00" d="M29.7,29.7c0.5-0.5,0.9-1,1.2-1.5L24,24l4.1,6.9C28.7,30.5,29.2,30.1,29.7,29.7z"/>
+                        <path fill="#FFFF00" d="M24,24l-4.1-6.9c-0.6,0.3-1.1,0.7-1.5,1.2c-0.5,0.5-0.9,1-1.2,1.5L24,24z"/>
+                    </g>
+                    <polygon fill="#FFFF00" points="19.6,30.1 21.3,24.7 16.9,21.2 22.4,21.2 24,16.3 25.7,21.2 31.3,21.2 26.9,24.7 28.5,30 24,26.8   "/>
                 </svg>
                 <span class="logo-text">NUTCHANON</span>
             </a>
@@ -1099,7 +1192,7 @@ Free HTML CSS Template
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="glitch" data-text="NUTCHANON KONGKAEW">NUTCHANON KONGKAEW</h1>
-            <p class="subtitle">Web Creator & Developer</p>
+            <p class="subtitle">Full Stack Developer</p>
         </div>
         <a href="#about" class="scroll-btn">
             <div class="scroll-btn-inner">
@@ -1121,7 +1214,7 @@ Free HTML CSS Template
                 </div>
             </div>
             <div class="about-content">
-                <h3>Genesis of Luxury Code</h3>
+                <h3>Code with intent</h3>
                 <p class="thai-text" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
 
                     ในฐานะนักพัฒนาสาย <strong style="color: var(--primary);">Fullstack</strong> ที่หลงใหลในการสร้างสรรค์นวัตกรรมดิจิทัล ผมมุ่งมั่นที่จะเชื่อมโยงงานดีไซน์ที่ประณีตและโต้ตอบได้อย่างลื่นไหลในฝั่ง <strong style="color: var(--primary);">Frontend</strong> เข้ากับระบบสถาปัตยกรรมที่เสถียร ปลอดภัย และยืดหยุ่นในฝั่ง <strong style="color: var(--secondary);">Backend</strong> เพื่อส่งมอบประสบการณ์การใช้งานที่ไร้รอยต่อ
@@ -1154,30 +1247,30 @@ Free HTML CSS Template
     <section id="projects" class="fade-in">
         <h2 class="section-title">PROJECTS</h2>
         <div class="projects-grid">
-            <div class="glass-card project-card">
+            <a href="https://nutchanon.net/sp" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
                 <h3 style="color: var(--primary);">Personal/Portfolio</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">แสดงตัวตน เผยแพร่ผลงาน</p>
-            </div>
-            <div class="glass-card project-card">
+                <p class="thai-text" style="color: var(--text-secondary);">แสดงตัวตน Showcase</p>
+            </a>
+            <a href="https://nutchanon.net/lp" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
                 <h3 style="color: var(--secondary);">Landing Page</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">ขายสินค้า/บริการ</p>
-            </div>
-            <div class="glass-card project-card">
+                <p class="thai-text" style="color: var(--text-secondary);">ส่งเสริม Campaign</p>
+            </a>
+            <a href="https://nutchanon.net/cs" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
                 <h3 style="color: var(--accent);">Blog/Content</h3>
                 <p class="thai-text" style="color: var(--text-secondary);">สร้าง Audience</p>
-            </div>
-            <div class="glass-card project-card">
+            </a>
+            <a href="https://nutchanon.net/cs" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
                 <h3 style="color: var(--primary);">Business Website</h3>
                 <p class="thai-text" style="color: var(--text-secondary);">สร้าง Credibility</p>
-            </div>
-            <div class="glass-card project-card">
+            </a>
+            <a href="https://nutchanon.net/cs" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
                 <h3 style="color: var(--secondary);">Web App/Tool</h3>
                 <p class="thai-text" style="color: var(--text-secondary);">ให้บริการ Interactive</p>
-            </div>
-            <div class="glass-card project-card">
+            </a>
+            <a href="https://nutchanon.net/cs" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
                 <h3 style="color: var(--accent);">E-Commerce</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">ขายสินค้าออนไลน์</p>
-            </div>
+                <p class="thai-text" style="color: var(--text-secondary);">ร้านค้าออนไลน์ (Online Store)</p>
+            </a>
         </div>
     </section>
 
@@ -1194,13 +1287,13 @@ Free HTML CSS Template
                 <span>JavaScript</span>
             </div>
             <div class="skill-node">
+                <span>TypeScript</span>
+            </div>
+            <div class="skill-node">
                 <span>React</span>
             </div>
             <div class="skill-node">
-                <span>WebGL</span>
-            </div>
-            <div class="skill-node">
-                <span>Three.js</span>
+                <span>Vue.js</span>
             </div>
         </div>
     </section>
@@ -1388,32 +1481,71 @@ Free HTML CSS Template
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return;
+                const target = document.querySelector(href);
+                if (!target) return;
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                const nb = document.getElementById('navbar');
+                const navH = nb ? nb.offsetHeight : 0;
+                const top = target.getBoundingClientRect().top + window.scrollY - navH + 1;
+                window.scrollTo({ top, behavior: 'smooth' });
+                const mt = document.querySelector('.mobile-menu-toggle');
+                const nm = document.querySelector('.nav-menu');
+                if (mt && nm) { mt.classList.remove('active'); nm.classList.remove('active'); }
             });
         });
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
+        // Navbar scroll effect + active section tracking (rAF-throttled)
+        const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+        const navbarEl = document.getElementById('navbar');
+        let ticking = false;
+
+        function onScroll() {
             if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
+                navbarEl.classList.add('scrolled');
             } else {
-                navbar.classList.remove('scrolled');
+                navbarEl.classList.remove('scrolled');
             }
 
-            // Fade in sections
-            const sections = document.querySelectorAll('.fade-in');
-            sections.forEach(section => {
+            document.querySelectorAll('.fade-in').forEach(section => {
                 const rect = section.getBoundingClientRect();
                 if (rect.top < window.innerHeight * 0.8) {
                     section.classList.add('visible');
                 }
             });
-        });
+
+            const navH = navbarEl.offsetHeight;
+            const line = navH + 20;
+            const sections = document.querySelectorAll('section[id]');
+            let currentId = '';
+
+            if (window.scrollY < 10) {
+                currentId = sections[0] ? sections[0].id : '';
+            } else if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) {
+                currentId = sections[sections.length - 1] ? sections[sections.length - 1].id : '';
+            } else {
+                sections.forEach(sec => {
+                    const rect = sec.getBoundingClientRect();
+                    if (rect.top <= line && rect.bottom > line) {
+                        currentId = sec.id;
+                    }
+                });
+            }
+
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+            });
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(onScroll);
+                ticking = true;
+            }
+        }, { passive: true });
+        onScroll();
 
         // Form submission
         document.querySelector('.contact-form').addEventListener('submit', (e) => {
