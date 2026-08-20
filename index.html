@@ -8,12 +8,12 @@
     <meta name="author" content="Nutchanon Kongkaew">
     <meta name="keywords" content="Nutchanon Kongkaew, Web Developer, Fullstack Developer, Frontend, Backend, Web Creator, Portfolio, Thailand, React, JavaScript">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="/">
+    <link rel="canonical" id="canonical-link" href="https://nutchanon.net">
     <!-- Open Graph -->
     <meta property="og:title" content="Nutchanon Kongkaew | Web Creator & Developer">
     <meta property="og:description" content="Portfolio of Nutchanon Kongkaew — a Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="https://nutchanon.net">
     <meta property="og:site_name" content="Nutchanon Kongkaew Portfolio">
     <meta property="og:image" content="/og-image.jpg">
     <meta property="og:image:width" content="1200">
@@ -34,7 +34,7 @@
       "name": "Nutchanon Kongkaew",
       "jobTitle": "Web Creator & Developer",
       "description": "Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.",
-      "url": "/",
+      "url": "https://nutchanon.net",
       "image": "/og-image.jpg",
       "knowsAbout": [
         "Web Development",
@@ -54,7 +54,6 @@
 /*
 
 Nutchanon Kongkaew
-https://nutchanon.net
 
 */
 
@@ -115,7 +114,7 @@ https://nutchanon.net
             line-height: 1.7;
         }
 
-        /* Neural Network Canvas Background */
+        /* Nutchanon Kongkaew Canvas Background */
         #neural-bg {
             position: fixed;
             top: 0;
@@ -1134,7 +1133,6 @@ https://nutchanon.net
 <!--
 
 Nutchanon Kongkaew
-https://nutchanon.net
 
 -->
 
@@ -1538,6 +1536,12 @@ https://nutchanon.net
             navLinks.forEach(link => {
                 link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
             });
+
+            const canonicalLink = document.getElementById('canonical-link');
+            if (canonicalLink && currentId) {
+                canonicalLink.setAttribute('href', `https://nutchanon.net{currentId}`);
+            }
+
             ticking = false;
         }
 
