@@ -1,61 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutchanon Kongkaew | Full Stack Developer</title>
-    <meta name="description" content="Portfolio of Nutchanon Kongkaew — a Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.">
+    <title>Nutchanon Kongkaew — Fullstack Developer Portfolio</title>
+    <meta name="description" content="พอร์ตโฟลิโอของ Nutchanon Kongkaew — Fullstack Developer ผู้เชี่ยวชาญ React, Next.js และเทคโนโลยีเว็บสมัยใหม่ สร้างผลิตภัณฑ์ที่ใส่ใจทั้งโค้ดและดีไซน์">
+    <meta name="keywords" content="Nutchanon Kongkaew, Fullstack Developer, Portfolio, React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Web Developer, Thailand">
     <meta name="author" content="Nutchanon Kongkaew">
-    <meta name="keywords" content="Nutchanon Kongkaew, Web Developer, Fullstack Developer, Frontend, Backend, Web Creator, Portfolio, Thailand, React, JavaScript">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" id="canonical-link" href="https://nutchanon.net">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Nutchanon Kongkaew | Web Creator & Developer">
-    <meta property="og:description" content="Portfolio of Nutchanon Kongkaew — a Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.">
+    <link rel="canonical" href="https://nutchanon.net/">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nutchanon.net">
-    <meta property="og:site_name" content="Nutchanon Kongkaew Portfolio">
-    <meta property="og:image" content="https://nutchanon.net/og-image.jpg">
+    <meta property="og:url" content="https://nutchanon.net/">
+    <meta property="og:title" content="Nutchanon Kongkaew — Fullstack Developer Portfolio">
+    <meta property="og:description" content="พอร์ตโฟลิโอของ Nutchanon Kongkaew — Fullstack Developer ผู้เชี่ยวชาญ React, Next.js และเทคโนโลยีเว็บสมัยใหม่">
+    <meta property="og:image" content="https://nutchanon.net/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Nutchanon Kongkaew — Web Creator & Developer">
-    <meta property="og:locale" content="en_US">
-    <!-- Twitter / X -->
+    <meta property="og:image:alt" content="Nutchanon Kongkaew — Fullstack Developer Portfolio">
+    <meta property="og:site_name" content="Nutchanon Kongkaew Portfolio">
+    <meta property="og:locale" content="th_TH">
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nutchanon Kongkaew | Web Creator & Developer">
-    <meta name="twitter:description" content="Portfolio of Nutchanon Kongkaew — a Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.">
-    <meta name="twitter:image" content="https://nutchanon.net/og-image.jpg">
-    <meta name="twitter:image:alt" content="Nutchanon Kongkaew — Web Creator & Developer">
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nutchanon Kongkaew",
-      "jobTitle": "Web Creator & Developer",
-      "description": "Fullstack Web Creator & Developer crafting clean, performant digital experiences. 30+ projects, 3+ years experience, 20+ clients.",
-      "url": "https://nutchanon.net",
-      "image": "https://nutchanon.net/og-image.jpg",
-      "knowsAbout": [
-        "Web Development",
-        "Frontend Development",
-        "Backend Development",
-        "Fullstack Development",
-        "JavaScript",
-        "React"
-      ]
-    }
-    </script>
+    <meta name="twitter:title" content="Nutchanon Kongkaew — Fullstack Developer Portfolio">
+    <meta name="twitter:description" content="พอร์ตโฟลิโอของ Nutchanon Kongkaew — Fullstack Developer ผู้เชี่ยวชาญ React, Next.js และเทคโนโลยีเว็บสมัยใหม่">
+    <meta name="twitter:image" content="https://nutchanon.net/og-image.png">
+    <meta name="twitter:image:alt" content="Nutchanon Kongkaew — Fullstack Developer Portfolio">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <!-- Theme color -->
+    <meta name="theme-color" content="#050505">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>.thai-text{font-family:'Noto Sans Thai','Exo 2',sans-serif;}</style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-/*
-
-Nutchanon Kongkaew
-
-*/
+/* Nutchanon Kongkaew */
 
 @charset "utf-8";
 /* CSS Document */
@@ -70,19 +54,14 @@ Nutchanon Kongkaew
             --primary: #00ffff;
             --secondary: #ff00ff;
             --accent: #ffff00;
-            --bg-dark: #0a0a0a;
+            --bg-dark: #050505;
             --bg-glass: rgba(255, 255, 255, 0.05);
             --text-primary: #ffffff;
             --text-secondary: #b0b0b0;
         }
 
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 80px;
-        }
-
         body {
-            font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', 'Kanit', sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-primary);
             overflow-x: hidden;
@@ -90,6 +69,10 @@ Nutchanon Kongkaew
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            min-height: 100svh;
         }
 
         body::before {
@@ -99,13 +82,11 @@ Nutchanon Kongkaew
             left: 0;
             right: 0;
             bottom: 0;
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 2px,
-                rgba(0, 255, 255, 0.03) 2px,
-                rgba(0, 255, 255, 0.03) 4px
-            );
+            background:
+                linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(255, 255, 255, 0.25) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 4px, 4px 100%;
+            opacity: 0.03;
             pointer-events: none;
             z-index: 1;
         }
@@ -114,7 +95,7 @@ Nutchanon Kongkaew
             line-height: 1.7;
         }
 
-        /* Nutchanon Kongkaew Canvas Background */
+        /* Nutchanon Canvas Background */
         #neural-bg {
             position: fixed;
             top: 0;
@@ -131,18 +112,13 @@ Nutchanon Kongkaew
             top: 0;
             width: 100%;
             padding: 15px 50px;
-            background: rgba(10, 10, 10, 0.9);
-            backdrop-filter: blur(10px);
+            background: transparent;
             z-index: 1000;
             transition: all 0.3s ease;
-            border-bottom: 1px solid transparent;
-            border-image: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent)) 1;
         }
 
         nav.scrolled {
             padding: 10px 50px;
-            background: rgba(10, 10, 10, 0.98);
-            box-shadow: 0 5px 20px rgba(0, 255, 255, 0.12), 0 5px 30px rgba(255, 0, 255, 0.08);
         }
 
         .nav-container {
@@ -157,7 +133,7 @@ Nutchanon Kongkaew
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 15px;
             text-decoration: none;
             transition: all 0.3s ease;
         }
@@ -167,157 +143,59 @@ Nutchanon Kongkaew
         }
 
         .logo-svg {
-            width: 40px;
-            height: 40px;
+            width: 48px;
+            height: 48px;
             position: relative;
-            display: block;
-            filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.35)) drop-shadow(0 0 6px rgba(255, 0, 255, 0.25));
+            filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.55)) drop-shadow(0 0 3px rgba(255, 0, 255, 0.35));
             transition: filter 0.3s ease;
         }
 
         .logo-container:hover .logo-svg {
-            filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.6)) drop-shadow(0 0 10px rgba(255, 0, 255, 0.5)) drop-shadow(0 0 14px rgba(255, 255, 0, 0.35));
+            filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.8)) drop-shadow(0 0 6px rgba(255, 0, 255, 0.55));
+        }
+
+        .orbital-rings {
+            transform-origin: 256px 256px;
+            animation: orbitSpin 10s linear infinite;
+        }
+
+        @keyframes orbitSpin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
         .logo-text {
-            font-family: 'Audiowide', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 400;
-            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            font-family: 'Inter', 'Kanit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #ffffff, rgba(0, 255, 255, 0.8), var(--secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: 3px;
+            letter-spacing: 0.2em;
             text-transform: uppercase;
-            line-height: 1;
-        }
-
-        /* Menu decorative lines */
-        .nav-menu {
-            position: relative;
-        }
-
-        .nav-menu::before,
-        .nav-menu::after {
-            content: '';
-            position: absolute;
-            height: 1px;
-            width: 50px;
-            background: linear-gradient(90deg, transparent, var(--accent), var(--secondary), var(--primary));
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .nav-menu::before {
-            left: -60px;
-        }
-
-        .nav-menu::after {
-            right: -60px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), transparent);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 40px;
         }
 
         nav a {
-            font-family: 'Audiowide', sans-serif;
+            font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', sans-serif;
             color: var(--text-primary);
             text-decoration: none;
-            position: relative;
             transition: all 0.3s ease;
-            font-weight: 400;
-            letter-spacing: 1px;
-            padding: 5px 0;
-            font-size: 0.85rem;
-            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 0.95rem;
         }
 
-        nav ul a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-            transition: width 0.3s ease;
-        }
 
-        nav ul a:hover::after,
-        nav ul a.active::after {
-            width: 100%;
-        }
-
-        nav ul a:hover,
-        nav ul a.active {
-            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        nav a:focus { outline: none; }
-
-        nav ul a:focus-visible {
-            outline: 2px solid var(--secondary);
-            outline-offset: 4px;
-            border-radius: 2px;
-        }
-
-        .mobile-menu-toggle:focus-visible {
-            outline: 2px solid var(--secondary);
-            outline-offset: 4px;
-            border-radius: 2px;
-        }
-
-        /* Mobile Menu */
-        .mobile-menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            z-index: 1001;
-            background: none;
-            border: 0;
-            padding: 0;
-            appearance: none;
-        }
-
-        .mobile-menu-toggle span {
-            width: 30px;
-            height: 3px;
-            margin: 3px 0;
-            transition: all 0.3s ease;
-            border-radius: 2px;
-        }
-
-        .mobile-menu-toggle span:nth-child(1) { background: var(--primary); }
-        .mobile-menu-toggle span:nth-child(2) { background: var(--secondary); }
-        .mobile-menu-toggle span:nth-child(3) { background: var(--accent); }
-
-        .mobile-menu-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(8px, 8px);
-        }
-
-        .mobile-menu-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-menu-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(8px, -8px);
-        }
 
         /* Hero Section */
         .hero {
-            height: 100vh;
+            flex: 1 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            margin-top: 80px;
+            padding: 120px clamp(20px, 5vw, 50px) 60px;
+            width: 100%;
         }
 
         .hero-content {
@@ -328,14 +206,16 @@ Nutchanon Kongkaew
         }
 
         .glitch {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 5rem;
+            font-family: 'Inter', 'Kanit', sans-serif;
+            font-size: clamp(2.4rem, 9vw, 6rem);
+            line-height: 1.05;
+            word-break: break-word;
             font-weight: 900;
             text-transform: uppercase;
             position: relative;
             color: var(--text-primary);
-            letter-spacing: 8px;
-            animation: glitch 2s infinite;
+            letter-spacing: -0.02em;
+            text-shadow: 0 0 24px rgba(255, 255, 255, 0.12);
         }
 
         .glitch::before,
@@ -346,53 +226,53 @@ Nutchanon Kongkaew
             left: 0;
             width: 100%;
             height: 100%;
+            opacity: 0.7;
+            filter: blur(1px);
+            mix-blend-mode: screen;
+            pointer-events: none;
         }
 
         .glitch::before {
-            animation: glitch-1 0.5s infinite;
             color: var(--primary);
+            transform: translate(-2px, 1px);
             z-index: -1;
         }
 
         .glitch::after {
-            animation: glitch-2 0.5s infinite;
             color: var(--secondary);
+            transform: translate(2px, -1px);
             z-index: -2;
         }
 
-        @keyframes glitch {
-            0%, 100% { text-shadow: 0 0 5px rgba(0, 255, 255, 0.5); }
-            50% { text-shadow: 0 0 20px rgba(255, 0, 255, 0.5); }
-        }
-
-        @keyframes glitch-1 {
-            0%, 100% { clip: rect(42px, 9999px, 44px, 0); transform: translate(0); }
-            50% { clip: rect(12px, 9999px, 59px, 0); transform: translate(-2px, -2px); }
-        }
-
-        @keyframes glitch-2 {
-            0%, 100% { clip: rect(12px, 9999px, 85px, 0); transform: translate(0); }
-            50% { clip: rect(78px, 9999px, 93px, 0); transform: translate(2px, 2px); }
-        }
-
         .subtitle {
-            font-family: 'Exo 2', sans-serif;
-            font-size: 1.3rem;
+            font-family: 'Kanit', 'Inter', sans-serif;
+            font-size: clamp(1rem, 2.5vw, 1.4rem);
             font-weight: 300;
-            margin-top: 20px;
+            margin-top: 28px;
             opacity: 0.9;
-            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradient 3s ease infinite;
-            letter-spacing: 3px;
-            text-transform: uppercase;
+            color: var(--secondary);
+            letter-spacing: 0.08em;
+            text-shadow: 0 0 12px rgba(255, 0, 255, 0.5);
         }
 
-        @keyframes gradient {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+        .hero-divider {
+            width: clamp(96px, 12vw, 128px);
+            height: 1px;
+            margin: 36px auto 0;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+
+        /* Vignette — focuses the eye on the headline */
+        .vignette {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 2;
+            background: radial-gradient(ellipse at center, transparent 55%, rgba(5, 5, 5, 0.55) 100%);
         }
 
         /* Scroll Button */
@@ -453,16 +333,14 @@ Nutchanon Kongkaew
         }
 
         .section-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 3rem;
+            font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', sans-serif;
+            font-size: 2.6rem;
             font-weight: 700;
             margin-bottom: 50px;
             text-align: center;
             position: relative;
             display: inline-block;
             width: 100%;
-            letter-spacing: 4px;
-            text-transform: uppercase;
             text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 
                          0 0 20px rgba(0, 255, 255, 0.6),
                          0 0 30px rgba(0, 255, 255, 0.4);
@@ -563,7 +441,7 @@ Nutchanon Kongkaew
             justify-content: center;
             color: var(--primary);
             font-size: 6rem;
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Outfit', 'IBM Plex Sans Thai', sans-serif;
             font-weight: 900;
             position: relative;
             overflow: hidden;
@@ -586,7 +464,7 @@ Nutchanon Kongkaew
         }
 
         .about-content h3 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', sans-serif;
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 20px;
@@ -594,8 +472,6 @@ Nutchanon Kongkaew
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-transform: uppercase;
-            letter-spacing: 2px;
         }
 
         .about-stats {
@@ -621,7 +497,7 @@ Nutchanon Kongkaew
         }
 
         .stat-number {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Outfit', 'IBM Plex Sans Thai', sans-serif;
             font-size: 2.5rem;
             font-weight: 900;
             color: var(--primary);
@@ -630,11 +506,9 @@ Nutchanon Kongkaew
         }
 
         .stat-label {
-            font-family: 'Audiowide', sans-serif;
-            font-size: 0.8rem;
+            font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', sans-serif;
+            font-size: 0.9rem;
             color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 2px;
             font-weight: 400;
         }
 
@@ -649,13 +523,10 @@ Nutchanon Kongkaew
             position: relative;
             overflow: hidden;
             cursor: pointer;
-            display: block;
-            text-decoration: none;
-            color: inherit;
         }
 
         .project-card h3 {
-            font-family: 'Audiowide', sans-serif;
+            font-family: 'Outfit', 'IBM Plex Sans Thai', sans-serif;
             font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -710,7 +581,7 @@ Nutchanon Kongkaew
         }
 
         .skill-node {
-            font-family: 'Audiowide', sans-serif;
+            font-family: 'Outfit', 'IBM Plex Sans Thai', sans-serif;
             width: 120px;
             height: 120px;
             background: var(--bg-glass);
@@ -779,16 +650,14 @@ Nutchanon Kongkaew
         }
 
         .neural-btn {
-            font-family: 'Audiowide', sans-serif;
+            font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', sans-serif;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             color: var(--bg-dark);
             padding: 15px 40px;
             border: none;
             border-radius: 50px;
-            font-size: 14px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
@@ -815,12 +684,12 @@ Nutchanon Kongkaew
 
         /* Footer */
         footer {
-            background: rgba(10, 10, 10, 0.95);
-            border-top: 1px solid rgba(0, 255, 255, 0.2);
-            padding: 50px 50px 30px;
-            margin-top: 100px;
+            background: transparent;
+            padding: 0 clamp(20px, 5vw, 50px) clamp(20px, 4vh, 32px);
+            margin-top: auto;
             position: relative;
             z-index: 2;
+            width: 100%;
         }
 
         .footer-content {
@@ -833,13 +702,11 @@ Nutchanon Kongkaew
         }
 
         .footer-section h3 {
-            font-family: 'Audiowide', sans-serif;
+            font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', sans-serif;
             color: var(--primary);
             margin-bottom: 20px;
-            font-size: 1.1rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            font-size: 1.15rem;
+            font-weight: 600;
         }
 
         .footer-section ul {
@@ -886,13 +753,16 @@ Nutchanon Kongkaew
         }
 
         .footer-bottom {
-            font-family: 'Exo 2', sans-serif;
+            font-family: 'Inter', 'Kanit', sans-serif;
             text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            margin-top: 24px;
+            border-top: 1px solid rgba(0, 255, 255, 0.08);
             color: var(--text-secondary);
-            font-size: 0.9rem;
-            letter-spacing: 1px;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+
         }
 		.footer-bottom a {
 			color: white;
@@ -935,81 +805,36 @@ Nutchanon Kongkaew
         /* Responsive */
         @media (max-width: 768px) {
             nav {
-                padding: 15px 20px;
-            }
-
-            .logo-text {
-                font-size: 1.2rem;
+                padding: 14px 20px;
             }
 
             .logo-container {
+                justify-content: center;
                 gap: 12px;
             }
 
-            .logo-svg {
-                width: 32px;
-                height: 32px;
-            }
-
             .nav-container {
-                position: relative;
+                justify-content: center;
             }
 
-            .mobile-menu-toggle {
-                display: flex;
+            .logo-text {
+                font-size: 1rem;
+                letter-spacing: 0.12em;
             }
 
-            .nav-menu {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: rgba(10, 10, 10, 0.98);
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s ease;
-                margin-top: 15px;
-            }
-
-            .nav-menu.active {
-                max-height: 400px;
-                border-top: 1px solid transparent;
-                border-image: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent)) 1;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 4px 20px rgba(255, 0, 255, 0.15);
-            }
-
-            .nav-menu::before,
-            .nav-menu::after {
-                display: none;
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: 0;
-                padding: 20px;
-            }
-
-            nav ul li {
-                padding: 15px 0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            }
-
-            nav ul a {
-                font-size: 0.9rem;
-            }
-
-            nav ul li:last-child {
-                border-bottom: none;
+            .logo-svg {
+                width: 38px;
+                height: 38px;
             }
 
             .glitch {
-                font-size: 2.5rem;
-                letter-spacing: 3px;
+                letter-spacing: -0.02em;
             }
 
             .hero {
-                margin-top: 70px;
+                padding: 90px 20px 40px;
             }
+
 
             .subtitle {
                 font-size: 1rem;
@@ -1048,9 +873,11 @@ Nutchanon Kongkaew
                 height: 20px;
             }
 
-            .footer-bottom {
-                font-size: 0.8rem;
+            .footer-bottom,
+            .footer-bottom p {
+                font-size: 0.7rem;
             }
+
 
             .glass-card {
                 padding: 20px;
@@ -1130,244 +957,61 @@ Nutchanon Kongkaew
         }
 </style>
     
-<!--
-
-Nutchanon Kongkaew
-
--->
+<!-- Nutchanon Kongkaew -->
 
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
+    <div class="vignette"></div>
 
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo-container">
-                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                    <path fill="#00FFFF" d="M24,4C12.9,4,4,12.9,4,24s8.9,20,20,20s20-8.9,20-20S35.1,4,24,4z"/>
-                    <g>
-                        <path fill="#00FFFF" d="M9.9,9.9c-1.2,1.2-2.2,2.5-3,3.9L24,24L13.7,6.9C12.3,7.7,11,8.7,9.9,9.9z"/>
-                        <path fill="#00FFFF" d="M24,24l10.3,17.1c1.4-0.8,2.7-1.8,3.9-3s2.2-2.5,3-3.9L24,24z"/>
+                <svg class="logo-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nutchanon Kongkaew logo">
+                    <!-- Orbiting nodes -->
+                    <path fill="#ffff00" d="M230.311,397.291c0,4.795-1.135,9.334-3.136,13.348c-4.913,9.858-15.082,16.623-26.835,16.623 c-16.548,0-29.971-13.423-29.971-29.971c0-3.136,0.482-6.155,1.381-9.002c3.821-12.149,15.178-20.969,28.59-20.969 C216.889,367.32,230.311,380.743,230.311,397.291z"/>
+                    <path fill="#ffff00" d="M465.796,80.458c0,10.351-5.245,19.47-13.23,24.865c-4.774,3.222-10.543,5.106-16.741,5.106 c-16.548,0-29.971-13.423-29.971-29.971c0-6.454,2.044-12.427,5.523-17.33c5.427-7.643,14.354-12.641,24.448-12.641 C452.372,50.487,465.796,63.909,465.796,80.458z"/>
+                    <path fill="#ffff00" d="M130.337,96.599c6.176,5.491,10.062,13.487,10.062,22.392c0,16.548-13.423,29.971-29.971,29.971 c-8.51,0-16.184-3.554-21.643-9.248c-5.149-5.384-8.328-12.684-8.328-20.723c0-16.548,13.423-29.971,29.971-29.971 C118.071,89.021,125.039,91.889,130.337,96.599z"/>
+                    <!-- Core -->
+                    <circle fill="#00ffff" cx="256.004" cy="256.004" r="94.194"/>
+                    <path fill="#ff00ff" d="M285.971,324.505c-52.021,0-94.194-42.173-94.194-94.194c0-21.479,7.195-41.275,19.299-57.121 c-29.348,15.955-49.27,47.056-49.27,82.81c0,52.021,42.173,94.194,94.194,94.194c30.541,0,57.684-14.541,74.895-37.073 C317.542,320.381,302.238,324.505,285.971,324.505z"/>
+                    <!-- N mark + node dots -->
+                    <path fill="#ffffff" d="M277.409,289.718c-2.089,0-4.142-0.816-5.679-2.352l-33.392-33.393v27.717 c0,4.434-3.594,8.028-8.028,8.028c-4.434,0-8.028-3.594-8.028-8.028v-47.097c0-3.248,1.956-6.174,4.956-7.417 c2.999-1.242,6.453-0.556,8.748,1.74l33.393,33.393v-27.717c0-4.434,3.593-8.028,8.028-8.028s8.028,3.594,8.028,8.028v47.097 c0,3.248-1.956,6.174-4.956,7.417C279.487,289.517,278.443,289.718,277.409,289.718z"/>
+                    <circle fill="#ffffff" cx="440.11" cy="76.179" r="8.563"/>
+                    <circle fill="#ffffff" cx="204.625" cy="393.013" r="8.563"/>
+                    <circle fill="#ffffff" cx="114.713" cy="114.713" r="8.563"/>
+                    <!-- Orbital rings -->
+                    <g class="orbital-rings" fill="rgba(0,255,255,0.45)">
+                        <path d="M349.979,266.318c-4.352-0.85-8.57,1.986-9.42,6.337c-7.883,40.277-43.446,69.512-84.559,69.512 c-47.512,0-86.166-38.654-86.166-86.166s38.654-86.166,86.166-86.166c43.382,0,80.139,32.408,85.499,75.385 c0.549,4.399,4.561,7.521,8.96,6.972c4.398-0.549,7.521-4.56,6.973-8.96c-6.36-50.997-49.967-89.454-101.432-89.454 c-56.365,0-102.222,45.856-102.222,102.222S199.634,358.221,256,358.221c48.772,0,90.961-34.689,100.316-82.484 C357.168,271.387,354.331,267.169,349.979,266.318z"/>
+                        <path d="M256.001,98.119c-87.056,0-157.882,70.825-157.882,157.882c0,51.336,24.713,99.014,66.382,128.668c-0.14,0.398-0.277,0.797-0.405,1.203c-1.155,3.672-1.743,7.5-1.743,11.378c0,20.953,17.046,37.999,37.999,37.999c14.502,0,27.532-8.067,34.011-21.056c0.28-0.562,0.539-1.135,0.791-1.71c6.891,0.909,13.875,1.371,20.85,1.371c87.056,0,157.882-70.825,157.882-157.882S343.057,98.119,256.001,98.119z M256.001,397.826c-5.912,0-11.83-0.375-17.675-1.1c-0.304-20.692-17.221-37.433-37.985-37.433c-10.648,0-20.431,4.361-27.418,11.648c-36.893-26.687-58.748-69.194-58.748-114.94c0-78.203,63.623-141.826,141.826-141.826s141.826,63.623,141.826,141.826S334.203,397.826,256.001,397.826z M222.23,397.298c0,12.134-9.836,21.97-21.97,21.97s-21.97-9.836-21.97-21.97c0-12.134,9.836-21.97,21.97-21.97C212.394,375.328,222.23,385.164,222.23,397.298z"/>
+                        <path d="M256.001,45.67c-45.562,0-88.757,14.267-125.163,41.287c-6.068-3.871-13.131-5.964-20.409-5.964c-20.953,0-37.999,17.046-37.999,37.999c0,8.093,2.55,15.848,7.251,22.309c-22.25,34.133-34.01,73.763-34.01,114.7c0,115.977,94.353,210.33,210.33,210.33s210.33-94.353,210.33-210.33S371.977,45.67,256.001,45.67z M110.428,97.049c5.372,0,10.549,1.972,14.576,5.551c4.682,4.163,7.366,10.138,7.366,16.392c0,12.1-9.843,21.943-21.943,21.943c-6.031,0-11.658-2.405-15.846-6.773c-3.932-4.115-6.097-9.501-6.097-15.169C88.485,106.892,98.329,97.049,110.428,97.049z M256.001,450.275c-107.124,0-194.275-87.151-194.275-194.275c0-36.994,10.387-72.829,30.075-103.878c5.616,3.175,11.978,4.867,18.628,4.867c20.953,0,37.999-17.046,37.999-37.999c0-7.36-2.149-14.492-6.065-20.57c33.207-24.022,72.369-36.696,113.638-36.696c107.123,0,194.275,87.151,194.275,194.275S363.124,450.275,256.001,450.275z"/>
+                        <path d="M463.671,106.293c6.455-6.956,10.153-16.138,10.153-25.836c0-20.953-17.046-37.999-37.999-37.999c-9.339,0-18.269,3.469-25.148,9.538C365.911,17.96,312.555,0,256.001,0C187.621,0,123.335,26.629,74.981,74.983S0,187.621,0,256.001s26.629,132.666,74.981,181.018S187.621,512,255.999,512c68.379,0,132.666-26.629,181.018-74.981C485.371,388.666,512,324.379,512,256.001C512,201.638,495.308,150.046,463.671,106.293z M435.825,58.515c12.1,0,21.943,9.843,21.943,21.943c0,6.908-3.248,13.37-8.738,17.521c-0.397,0.21-0.785,0.447-1.153,0.73c-3.494,2.209-7.518,3.388-11.695,3.388c-12.1,0-21.943-9.843-21.943-21.943c0-4.568,1.397-8.953,4.04-12.679C422.041,61.976,428.734,58.515,435.825,58.515z M256.001,495.944c-132.306,0-239.945-107.638-239.945-239.944S123.695,16.056,256.001,16.056c53.092,0,103.172,16.883,145.165,48.879c-2.181,4.853-3.34,10.108-3.34,15.523c0,20.953,17.046,37.999,37.999,37.999c5.097,0,10.066-1.028,14.685-2.966c29.743,41.046,45.436,89.473,45.436,140.51C495.944,388.306,388.306,495.944,256.001,495.944z"/>
                     </g>
-                    <path fill="#FF00FF" d="M24,40c-8.8,0-16-7.2-16-16S15.2,8,24,8s16,7.2,16,16S32.8,40,24,40z"/>
-                    <g>
-                        <path fill="#FF00FF" d="M24,24l-8.2-13.7c-1.1,0.7-2.1,1.4-3.1,2.4s-1.7,2-2.4,3.1L24,24z"/>
-                        <path fill="#FF00FF" d="M35.3,35.3c0.9-0.9,1.7-2,2.4-3.1L24,24l8.2,13.7C33.3,37,34.4,36.3,35.3,35.3z"/>
-                    </g>
-                    <path fill="#FF00FF" d="M24,12c-6.7,0-12,5.3-12,12s5.3,12,12,12s12-5.3,12-12S30.7,12,24,12z"/>
-                    <g>
-                        <path fill="#FF00FF" d="M32.5,32.5c0.7-0.7,1.3-1.5,1.8-2.3L24,24l6.2,10.3C31,33.8,31.8,33.2,32.5,32.5z"/>
-                        <path fill="#FF00FF" d="M24,24l-6.2-10.3c-0.8,0.5-1.6,1.1-2.3,1.8s-1.3,1.5-1.8,2.3L24,24z"/>
-                    </g>
-                    <path fill="#FFFF00" d="M24,32c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S28.4,32,24,32z"/>
-                    <g>
-                        <path fill="#FFFF00" d="M29.7,29.7c0.5-0.5,0.9-1,1.2-1.5L24,24l4.1,6.9C28.7,30.5,29.2,30.1,29.7,29.7z"/>
-                        <path fill="#FFFF00" d="M24,24l-4.1-6.9c-0.6,0.3-1.1,0.7-1.5,1.2c-0.5,0.5-0.9,1-1.2,1.5L24,24z"/>
-                    </g>
-                    <polygon fill="#FFFF00" points="19.6,30.1 21.3,24.7 16.9,21.2 22.4,21.2 24,16.3 25.7,21.2 31.3,21.2 26.9,24.7 28.5,30 24,26.8   "/>
                 </svg>
-                <span class="logo-text">NUTCHANON</span>
+                <span class="logo-text">Nutchanon</span>
             </a>
             
-            <button type="button" class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <div class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
         </div>
     </nav>
 
+
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="glitch" data-text="NUTCHANON KONGKAEW">NUTCHANON KONGKAEW</h1>
-            <p class="subtitle">Full Stack Developer</p>
+            <h1 class="glitch" data-text="Take care, kiddo.">Take care, kiddo.</h1>
+            <p class="subtitle">คิดถึงนะครับคุณน้อง</p>
+            <div class="hero-divider"></div>
         </div>
-        <a href="#about" class="scroll-btn" aria-label="Scroll down to the about section">
-            <div class="scroll-btn-inner">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
-                </svg>
-            </div>
-        </a>
-    </section>
-
-    <section id="about" class="fade-in">
-        <h2 class="section-title">ABOUT ME</h2>
-        <div class="about-container">
-            <div class="about-image">
-                <div class="profile-img-wrapper">
-                    <div class="profile-img">
-                        <span>NK</span>
-                    </div>
-                </div>
-            </div>
-            <div class="about-content">
-                <h3>Code with intent</h3>
-                <p class="thai-text" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
-
-                    ในฐานะนักพัฒนาสาย <strong style="color: var(--primary);">Fullstack</strong> ที่หลงใหลในการสร้างสรรค์นวัตกรรมดิจิทัล ผมมุ่งมั่นที่จะเชื่อมโยงงานดีไซน์ที่ประณีตและโต้ตอบได้อย่างลื่นไหลในฝั่ง <strong style="color: var(--primary);">Frontend</strong> เข้ากับระบบสถาปัตยกรรมที่เสถียร ปลอดภัย และยืดหยุ่นในฝั่ง <strong style="color: var(--secondary);">Backend</strong> เพื่อส่งมอบประสบการณ์การใช้งานที่ไร้รอยต่อ
-
-                </p>
-
-                <p class="thai-text" style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 20px;">
-
-                    สำหรับผมแล้ว การออกแบบและเขียนโค้ดที่สะอาดเรียบง่ายคือนิยามของ <strong style="color: var(--accent);">"Ultimate Sophistication"</strong> และเป็นอีกหนึ่งมิติของ <strong style="color: var(--primary);">"True Luxury"</strong> ที่แท้จริงบนโลกดิจิทัล เพราะรายละเอียดที่ซ่อนอยู่เบื้องหลังความลื่นไหลและประสิทธิภาพการทำงาน คือคุณค่าที่เราพิถีพิถันใส่ใจในทุกบรรทัด
-
-                </p>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">30+</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">Years Exp</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Clients</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="fade-in">
-        <h2 class="section-title">PROJECTS</h2>
-        <div class="projects-grid">
-            <a href="https://nutchanon.net/project-portfolio" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
-                <h3 style="color: var(--primary);">Personal/Portfolio</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">แสดงตัวตน Showcase</p>
-            </a>
-            <a href="https://nutchanon.net/project-landing" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
-                <h3 style="color: var(--secondary);">Landing Page</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">ส่งเสริม Campaign</p>
-            </a>
-            <a href="https://nutchanon.net/project-blog" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
-                <h3 style="color: var(--accent);">Blog/Content</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">สร้าง Audience</p>
-            </a>
-            <a href="https://nutchanon.net/project-coming-soon" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
-                <h3 style="color: var(--primary);">Business Website</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">สร้าง Credibility</p>
-            </a>
-            <a href="https://nutchanon.net/project-coming-soon" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
-                <h3 style="color: var(--secondary);">Web App/Tool</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">ให้บริการ Interactive</p>
-            </a>
-            <a href="https://nutchanon.net/project-coming-soon" target="_blank" rel="noopener noreferrer" class="glass-card project-card">
-                <h3 style="color: var(--accent);">E-Commerce</h3>
-                <p class="thai-text" style="color: var(--text-secondary);">ร้านค้าออนไลน์ (Online Store)</p>
-            </a>
-        </div>
-    </section>
-
-    <section id="skills" class="fade-in">
-        <h2 class="section-title">SKILLS</h2>
-        <div class="skills-container">
-            <div class="skill-node">
-                <span>HTML5</span>
-            </div>
-            <div class="skill-node">
-                <span>CSS3</span>
-            </div>
-            <div class="skill-node">
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-node">
-                <span>TypeScript</span>
-            </div>
-            <div class="skill-node">
-                <span>React</span>
-            </div>
-            <div class="skill-node">
-                <span>Next.js</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="fade-in">
-        <h2 class="section-title">CONTACT</h2>
-        <form class="contact-form glass-card">
-            <div class="form-group">
-                <input type="text" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <textarea rows="5" placeholder="Message" required></textarea>
-            </div>
-            <button type="submit" class="neural-btn">SEND MESSAGE</button>
-        </form>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">UI/UX Development</a></li>
-                    <li><a href="#">Frontend Development</a></li>
-                    <li><a href="#">Consultation</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 10px;">
-                    cho@nutchanon.net
-                </p>
-                <div class="social-links">
-                    <a href="https://github.com/choxnn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
-                    <a href="https://x.com/choxcxo" target="_blank" rel="noopener noreferrer" aria-label="X">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
         <div class="footer-bottom">
-            <p>&copy; 2026 Nutchanon Kongkaew. All rights reserved.</p>
+            <p>&copy; 2026 Nutchanon Kongkaew</p>
         </div>
     </footer>
 <script>
 // JavaScript Document
 
-// Nutchanon Kongkaew Background Animation
+// Nutchanon Background Animation
         const canvas = document.getElementById('neural-bg');
         const ctx = canvas.getContext('2d');
         let nodes = [];
@@ -1459,105 +1103,46 @@ Nutchanon Kongkaew
             mouse.y = e.clientY;
         });
 
-        // Mobile menu toggle
-        const mobileToggle = document.getElementById('mobile-toggle');
-        const navMenu = document.getElementById('nav-menu');
-
-        mobileToggle.addEventListener('click', () => {
-            mobileToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            mobileToggle.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileToggle.classList.remove('active');
-                navMenu.classList.remove('active');
-                mobileToggle.setAttribute('aria-expanded', 'false');
-            });
-        });
-
         // Smooth scroll
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (!href || href === '#') return;
-                const target = document.querySelector(href);
-                if (!target) return;
                 e.preventDefault();
-                const nb = document.getElementById('navbar');
-                const navH = nb ? nb.offsetHeight : 0;
-                const top = target.getBoundingClientRect().top + window.scrollY - navH + 1;
-                window.scrollTo({ top, behavior: 'smooth' });
-                const mt = document.querySelector('.mobile-menu-toggle');
-                const nm = document.querySelector('.nav-menu');
-                if (mt && nm) { mt.classList.remove('active'); nm.classList.remove('active'); }
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             });
         });
 
-        // Navbar scroll effect + active section tracking (rAF-throttled)
-        const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
-        const navbarEl = document.getElementById('navbar');
-        let ticking = false;
-
-        function onScroll() {
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                navbarEl.classList.add('scrolled');
+                navbar.classList.add('scrolled');
             } else {
-                navbarEl.classList.remove('scrolled');
+                navbar.classList.remove('scrolled');
             }
 
-            document.querySelectorAll('.fade-in').forEach(section => {
+            // Fade in sections
+            const sections = document.querySelectorAll('.fade-in');
+            sections.forEach(section => {
                 const rect = section.getBoundingClientRect();
                 if (rect.top < window.innerHeight * 0.8) {
                     section.classList.add('visible');
                 }
             });
-
-            const navH = navbarEl.offsetHeight;
-            const line = navH + 20;
-            const sections = document.querySelectorAll('section[id]');
-            let currentId = '';
-
-            if (window.scrollY < 10) {
-                currentId = sections[0] ? sections[0].id : '';
-            } else if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) {
-                currentId = sections[sections.length - 1] ? sections[sections.length - 1].id : '';
-            } else {
-                sections.forEach(sec => {
-                    const rect = sec.getBoundingClientRect();
-                    if (rect.top <= line && rect.bottom > line) {
-                        currentId = sec.id;
-                    }
-                });
-            }
-
-            navLinks.forEach(link => {
-                link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
-            });
-
-            const canonicalLink = document.getElementById('canonical-link');
-            if (canonicalLink && currentId) {
-                canonicalLink.setAttribute('href', `https://nutchanon.net{currentId}`);
-            }
-
-            ticking = false;
-        }
-
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                requestAnimationFrame(onScroll);
-                ticking = true;
-            }
-        }, { passive: true });
-        onScroll();
+        });
 
         // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Message sent! (This is a demo)');
-        });
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Message sent! (This is a demo)');
+            });
+        }
+
 </script>
 
 </body>
